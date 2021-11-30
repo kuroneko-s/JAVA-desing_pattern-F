@@ -11,7 +11,7 @@ import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
 import java.io.File;
 
-@Component
+//@Component
 public class AbstractFactoryRunner implements ApplicationRunner {
     @Override
     public void run(ApplicationArguments args) throws Exception {
