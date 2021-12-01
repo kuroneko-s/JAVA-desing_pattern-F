@@ -9,8 +9,7 @@ import org.springframework.web.util.UriComponentsBuilder;
 
 import java.util.stream.Stream;
 
-@Controller
-@Component
+//  @Component
 public class BuilderRunner implements ApplicationRunner {
 
     @Override
