@@ -3,9 +3,13 @@ package com.inflearn.desing_pattern.builder;
 import org.springframework.boot.ApplicationArguments;
 import org.springframework.boot.ApplicationRunner;
 import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.util.UriComponents;
+import org.springframework.web.util.UriComponentsBuilder;
 
 import java.util.stream.Stream;
 
+@Controller
 @Component
 public class BuilderRunner implements ApplicationRunner {
 
@@ -22,5 +26,13 @@ public class BuilderRunner implements ApplicationRunner {
         // 제네릭 타입
         Stream<String> result = Stream.<String>builder().add("choi").add("dev").build();
         result.forEach(System.out::println);
+
+        UriComponents components = UriComponentsBuilder.newInstance()
+                .scheme("http")
+                .host("www.google.com")
+                .path("/")
+                .build().encode();
+
+        System.out.println(components.toString());
     }
 }
