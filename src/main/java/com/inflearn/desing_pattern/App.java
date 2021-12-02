@@ -7,9 +7,10 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 @SpringBootApplication
 public class App {
     public static void main(String[] args) {
-        SpringApplication app = new SpringApplication(App.class);
-        app.setWebApplicationType(WebApplicationType.NONE);
-        app.run(args);
+//        SpringApplication app = new SpringApplication(App.class);
+//        app.setWebApplicationType(WebApplicationType.SERVLET);
+//        app.run(args);
+        SpringApplication.run(App.class, args);
     }
 
 }
