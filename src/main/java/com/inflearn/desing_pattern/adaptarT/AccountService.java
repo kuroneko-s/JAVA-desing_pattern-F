@@ -1,6 +1,6 @@
 package com.inflearn.desing_pattern.adaptarT;
 
-public class AccountService {
+public class AccountService implements UserDetailesService{
 
     Account findAccountByUsername(String username){
         Account account = new Account();
@@ -9,4 +9,8 @@ public class AccountService {
         return account;
     }
 
+    @Override
+    public UserDetails loadUser(String username) {
+        return findAccountByUsername(username);
+    }
 }

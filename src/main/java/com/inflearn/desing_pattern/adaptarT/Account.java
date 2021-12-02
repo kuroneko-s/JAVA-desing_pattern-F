@@ -1,6 +1,6 @@
 package com.inflearn.desing_pattern.adaptarT;
 
-public class Account {
+public class Account implements UserDetails{
     private String name;
     private String password;
 
@@ -18,5 +18,15 @@ public class Account {
 
     public void setPassword(String password) {
         this.password = password;
+    }
+
+    @Override
+    public String getUsername() {
+        return this.name;
+    }
+
+    @Override
+    public String getUserPassword() {
+        return this.password;
     }
 }

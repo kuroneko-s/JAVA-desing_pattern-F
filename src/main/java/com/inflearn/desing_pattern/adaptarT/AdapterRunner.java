@@ -9,11 +9,10 @@ public class AdapterRunner implements ApplicationRunner {
 
     @Override
     public void run(ApplicationArguments args) throws Exception {
-        AccountService accountService = new AccountService();
-        UserDetailesService userDetailesService = new AccountUserDetailesService(accountService);
-        LoginHandler loginHandler = new LoginHandler(userDetailesService);
+//        AccountService accountService = new AccountService();
+//        UserDetailesService userDetailesService = new AccountUserDetailesService(accountService);
+        LoginHandler loginHandler = new LoginHandler(new AccountService());
         String result = loginHandler.login("dong", "dong");
         System.out.println(result);
-
     }
 }
