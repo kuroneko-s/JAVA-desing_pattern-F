@@ -6,7 +6,7 @@ import org.springframework.stereotype.Service;
 
 import javax.swing.*;
 
-@Service
+//@Service
 public class CompotisteRunner implements ApplicationRunner {
 
     @Override
