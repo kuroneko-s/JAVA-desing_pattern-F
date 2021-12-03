@@ -4,9 +4,7 @@ import org.springframework.boot.ApplicationArguments;
 import org.springframework.boot.ApplicationRunner;
 import org.springframework.stereotype.Component;
 
-import java.sql.Driver;
-
-@Component
+//@Component
 public class BridgeRunner implements ApplicationRunner {
 
     @Override
@@ -21,8 +19,6 @@ public class BridgeRunner implements ApplicationRunner {
         NewSkin아칼리.skillQ();
         NewSkin아칼리.skillW();
          */
-
-
 
     }
 }
