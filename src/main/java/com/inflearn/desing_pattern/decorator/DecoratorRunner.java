@@ -12,7 +12,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-@Component
+//@Component
 public class DecoratorRunner implements ApplicationRunner {
 
     private static boolean enabledSpamFilter = true;
