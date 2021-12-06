@@ -5,7 +5,7 @@ import com.inflearn.desing_pattern.factorymethod.WhiteShip;
 import org.springframework.beans.factory.FactoryBean;
 import org.springframework.stereotype.Component;
 
-@Component
+//@Component
 public class ShipFactory implements FactoryBean<Ship> {
     @Override
     public Ship getObject() throws Exception {
