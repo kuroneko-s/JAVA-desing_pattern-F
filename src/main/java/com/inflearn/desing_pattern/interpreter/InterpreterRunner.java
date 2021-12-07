@@ -6,7 +6,7 @@ import org.springframework.stereotype.Component;
 
 import java.util.Map;
 
-@Component
+//@Component
 public class InterpreterRunner implements ApplicationRunner {
     @Override
     public void run(ApplicationArguments args) throws Exception {
