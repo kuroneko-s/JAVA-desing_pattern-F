@@ -9,7 +9,7 @@ import java.util.Date;
 import java.util.Map;
 import java.util.Set;
 
-@Component
+//@Component
 public class MementoRunner implements ApplicationRunner {
     @Override
     public void run(ApplicationArguments args) throws Exception {
