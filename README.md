@@ -54,4 +54,11 @@ StAX, SAX -> XML 읽을떄 도와주는 라이브러리
 특정 객체 상태 변화를 감지하고 알림을 받는 패턴
 spring boot에서 interceptor 말하는 거로 알고있음ㄷ
 Weak Reference (HashMap에 약한 참조를 사용하는 경우가 많다) -> CG를 사용을 하기 위해서
--> 근데 명시적으로 해지를 하는게 가장 좋다. 이렇게 해지를 못하는 경우에만 Weak Reference를 사용 ( 언제 없어질지를 보장을 못함 ) 
+-> 근데 명시적으로 해지를 하는게 가장 좋다. 이렇게 해지를 못하는 경우에만 Weak Reference를 사용 ( 언제 없어질지를 보장을 못함 )
+스프링에서 @EventListener(Class Name) 으로 사용하는 거, 상속 구현해서 사용하는 법 있음
+
+### 상태 패턴
+객체의 상태에 따라서 동작을 다르게 하는 패턴
+ex) 리모콘
+interface나 추상 클래스가 거의 반드시 있어야하는 패턴
+Context와 State가 중요함
