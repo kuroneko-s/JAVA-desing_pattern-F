@@ -8,7 +8,7 @@ import org.springframework.boot.ApplicationRunner;
 import org.springframework.stereotype.Component;
 
 // Client
-@Component
+// @Component
 public class StateRunner implements ApplicationRunner {
 
     @Override
