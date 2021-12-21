@@ -5,7 +5,7 @@ import org.springframework.boot.ApplicationRunner;
 import org.springframework.stereotype.Component;
 
 // Client
-@Component
+// @Component
 public class StrategyRunner implements ApplicationRunner {
     @Override
     public void run(ApplicationArguments args) throws Exception {
