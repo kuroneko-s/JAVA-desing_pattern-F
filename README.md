@@ -70,5 +70,7 @@ Context와 State가 중요함
 ex) Comparable
 이 패턴이 되게 괜찮다.
 
-    
+        
+        
+<hr/>
 220504 - 1회 
